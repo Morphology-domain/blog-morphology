@@ -2,9 +2,9 @@
 permalink:           pretty
 
 # Setup
-title:               Valenceo
+title:               Morphology
 tagline:             welcome!
-url:                 http://blog.valenceo.com
+url:                 http://blog.morp.holo.gy
 paginate:            1
 baseurl:             ""
 
@@ -18,15 +18,15 @@ sass:
 # About/contact
 author:
   name:              Matt Hayden
-  url:               https://github.com/matt-hayden
-  email:             manager+blog@valenceo.com
+  url:               https://github.com/Morphology-domain
+  email:             webmaster+blog@morp.holo.gy
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/matt-hayden/blog-valenceo
+  repo:              https://github.com/Morphology-domain/blog-morphology
 google_analytics:
-  id:                UA-102590217-1
+  #id:                
 
 # Gems
 gems:
