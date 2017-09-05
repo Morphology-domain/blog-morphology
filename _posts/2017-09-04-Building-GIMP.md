@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Example content
+title: Building GIMP
 ---
 
 
 <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+  My notes on building GIMP
 </div>
 
 
@@ -25,7 +25,7 @@ The [Official Docs](https://www.wiki.gimp.org/wiki/Hacking:Building) are helpful
 
 ```
 MAKE="make -j -l 7.5" # for an 8 core system
-INSTALL_PREFIX=/usr/local/stow/gimp-2.9
+INSTALL_PREFIX=/usr/local/stow/gimp-2.9 # customized for stow
 export PKG_CONFIG_PATH=$INSTALL_PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=$INSTALL_PREFIX/lib:$LD_LIBRARY_PATH
 ```
