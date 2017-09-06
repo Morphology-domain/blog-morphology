@@ -11,7 +11,9 @@ title: Building GIMP
 
 # Building GIMP 2.9.4
 
-The [Official Docs](https://www.wiki.gimp.org/wiki/Hacking:Building) are helpful outline, but don't help the linking and version mismatch problems I've encountered.
+The [Official Docs](https://www.wiki.gimp.org/wiki/Hacking:Building) are helpful outline, but don't help the linking and version mismatch problems I've encountered. I `git checkout` the following tags:
+
+1. gimp GIMP_2_9_4
 
 ## Order:
 
