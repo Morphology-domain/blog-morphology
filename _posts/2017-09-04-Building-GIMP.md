@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building GIMP
+tags: Debian GIMP
 ---
 
 

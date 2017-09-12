@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building VLC
+tags: Debian
 ---
 
 

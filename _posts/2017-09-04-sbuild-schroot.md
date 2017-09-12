@@ -1,6 +1,7 @@
 ---
 layout: post
-title: sbuild to block device
+title: sbuild off of snapshots
+tags: Debian chroot
 ---
 
 

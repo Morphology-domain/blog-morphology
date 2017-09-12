@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building libtorrent and rtorrent
+tags: Debian
 ---
 
 
