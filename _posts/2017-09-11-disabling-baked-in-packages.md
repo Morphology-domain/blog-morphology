@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disabling baked-in packaged in Debian and Ubuntu
+title: Disabling baked-in packages in Debian and Ubuntu
 tags: apt localizing
 ---
 
