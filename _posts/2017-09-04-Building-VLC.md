@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building GIMP
+title: Building VLC
 ---
 
 
@@ -9,7 +9,7 @@ title: Building GIMP
 </div>
 
 
-# Building GIMP 2.9.4
+# Building VLC 2.2.0
 
 The [Official Docs](https://wiki.videolan.org/UnixCompile/) are helpful outline, but don't help the linking and version mismatch problems I've encountered. I `git checkout` the following tags:
 
@@ -20,6 +20,20 @@ The [Official Docs](https://wiki.videolan.org/UnixCompile/) are helpful outline,
 1. ffmpeg
 1. vlc
 
+## Dependencies (on a Debian sbuild):
+
+```
+sed -n '/\s*[#]/!p' <<- EOF | xargs apt install
+	build-essential
+
+	automake
+	autopoint
+	gettext
+	libtool
+	pkg-config
+EOF
+```
+
 ## Flags:
 
 ```
@@ -29,21 +43,6 @@ export PKG_CONFIG_PATH=$INSTALL_PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=$INSTALL_PREFIX/lib:$LD_LIBRARY_PATH
 ```
 
-## Dependencies (on a Debian sbuild):
-
-```
-sed -n '/^$/!p' << EOF | xargs apt install
-	build-essential
-
-	automake
-	autopoint
-	gettext
-	libtool
-	pkg-config
-
-
-EOF
-```
 
 ### Building FFMpeg
 
@@ -53,7 +52,7 @@ git://git.ffmpeg.org/ffmpeg.git
 #### Dependencies
 
 ```
-sed -n '/^\s*$/!p' << EOF | xargs apt install
+sed -n '/\s*[#]/!p' <<- EOF | xargs apt install
 	build-essential
 
 	autoconf
@@ -98,6 +97,8 @@ git://github.com/mstorsjo/fdk-aac
 
 `apt-get build-dep vlc`
 
+
+## Compiling
 
 ## Building each package
 
